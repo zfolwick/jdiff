@@ -1,7 +1,27 @@
 #!/usr/bin/env bash
+################################################################################
+# Help                                                                         #
+################################################################################
+usage()
+{
+  echo "Usage: $(basename $0) [diff options] [--ignorefile={ignore-file-name}] file1.json file2.json"
+}
+
+[[ $1 =~ "-h" ]] && usage && exit
 
 file2="${@:(-1):1}"
 file1="${@:(-2):1}"
+
+if [[ ! -f "$file1" ]]; then
+  echo "not a file: $file1"
+  usage
+  exit 1
+fi
+if [[ ! -f "$file2" ]]; then
+  echo "not a file: $file2"
+  usage
+  exit 1
+fi
 
 # some objects we'll want to ignore
 ignorefile_opt="${@:(-3):1}"
