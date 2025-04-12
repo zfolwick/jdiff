@@ -1,7 +1,7 @@
 # jdiff
 a practical json diffing tool for quickly checking two json files for differences that the user cares about, while ignoring what's not important.
 
-jdiff follows the patterns of previous, existing *nix diffing tools like `diff`, `zdiff`, `pdiff`, etc. and is heavily borrowed from https://github.com/jlevy/pdiffjson.
+jdiff follows the patterns of previous, existing *nix diffing tools like `diff`, `zdiff`, `sdiff`, etc. and is heavily borrowed from https://github.com/jlevy/pdiffjson.
 
 # get jdiff
 The easiest way to acquire jdiff:
