@@ -6,7 +6,7 @@ jdiff follows the patterns of previous, existing *nix diffing tools like `diff`,
 # get jdiff
 The easiest way to acquire jdiff:
 ```
-wget https://raw.githubusercontent.com/zfolwick/jdiff/refs/heads/main/jdiff.sh -o jdiff
+wget https://raw.githubusercontent.com/zfolwick/jdiff/refs/heads/main/jdiff.sh -O jdiff
 chmod +x jdiff
 ```
 anything else is just showing off.
